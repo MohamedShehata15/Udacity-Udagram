@@ -25,17 +25,17 @@ It contains the following:
 
 Pipelines are normally written inside configuration files as a list of steps. In the case of CircleCI, this file will always be located inside a .circleci folder and will be named `config.yml`.
 
--  First of all, CircleCI configures the project based on `config.yml` and then starts the sequential workflow
--  Build job
+1.  First of all, CircleCI configures the project based on `config.yml` and then starts the sequential workflow
+2.  Build job
 
    ![CircleCIPipeline](../screenshots/circleci_build.jpg)
 
--  Setup the environment of the project & prepare the environment variables.
--  Install AWS CLI and CLI Configuration to get authorization.
--  Install Frontend Dependencies & Build the Frontend.
--  Install Backend Dependencies & Build the Backend.
+   -  Setup the environment of the project & prepare the environment variables.
+   -  Install AWS CLI and CLI Configuration to get authorization.
+   -  Install Frontend Dependencies & Build the Frontend.
+   -  Install Backend Dependencies & Build the Backend.
 
--  Deploy Job
+3.  Deploy Job
 
    ![CircleCIPipeline](../screenshots/circleci_deploy.jpg)
 
