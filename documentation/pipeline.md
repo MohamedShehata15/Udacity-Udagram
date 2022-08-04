@@ -28,21 +28,21 @@ Pipelines are normally written inside configuration files as a list of steps. In
 1.  First of all, CircleCI configures the project based on `config.yml` and then starts the sequential workflow
 2.  Build job
 
-   ![CircleCIPipeline](../screenshots/circleci_build.jpg)
+      ![CircleCIPipeline](../screenshots/circleci_build.jpg)
 
-   -  Setup the environment of the project & prepare the environment variables.
-   -  Install AWS CLI and CLI Configuration to get authorization.
-   -  Install Frontend Dependencies & Build the Frontend.
-   -  Install Backend Dependencies & Build the Backend.
+      -  Setup the environment of the project & prepare the environment variables.
+      -  Install AWS CLI and CLI Configuration to get authorization.
+      -  Install Frontend Dependencies & Build the Frontend.
+      -  Install Backend Dependencies & Build the Backend.
 
 3.  Deploy Job
 
-   ![CircleCIPipeline](../screenshots/circleci_deploy.jpg)
+      ![CircleCIPipeline](../screenshots/circleci_deploy.jpg)
 
-   -  Spin up environment & prepare the environment variables.
-   -  Install NodesJs
-   -  Install AWS CLI and CLI Configuration to get authorization.
-   -  Checkout Code.
-   -  Deploy the Frontend on `S3 Bucket`.
-   -  Deploy the Backend on `EB`.
-   -  Create the database on `RDS`.
+      -  Spin up environment & prepare the environment variables.
+      -  Install NodesJs
+      -  Install AWS CLI and CLI Configuration to get authorization.
+      -  Checkout Code.
+      -  Deploy the Frontend on `S3 Bucket`.
+      -  Deploy the Backend on `EB`.
+      -  Create the database on `RDS`.
