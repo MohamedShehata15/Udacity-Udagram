@@ -52,11 +52,11 @@ jobs:
               name: Deploy App
               command: |
                  npm run deploy
-
 workflows:
    udagram:
       jobs:
-         - build:
+         - build
+         - hold:
               filters:
                  branches:
                     only:
